@@ -134,3 +134,5 @@ alias gadd='git add'
 
 eval "$(thefuck --alias)"
 
+
+echo 'YOUR_LOGIN_PASSWD_HERE' | sudo -S sudo DISPLAY=:0 XAUTHORITY=/run/user/121/gdm/Xauthority nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=100"
