@@ -135,4 +135,7 @@ alias gadd='git add'
 eval "$(thefuck --alias)"
 
 
+#gnome-shell fuckin consumes 300mb of GPU mem. wtf ? temp fix for it
+gsettings set org.gnome.desktop.interface clock-show-seconds false
+
 echo 'YOUR_LOGIN_PASSWD_HERE' | sudo -S sudo DISPLAY=:0 XAUTHORITY=/run/user/121/gdm/Xauthority nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=100"
